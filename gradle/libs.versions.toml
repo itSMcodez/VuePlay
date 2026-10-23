@@ -2,7 +2,7 @@
 activityCompose = "1.13.0"
 agp = "9.2.1"
 coilCompose = "3.5.0"
-commonsLang3 = "3.20.0"
+commonsLang3 = "3.21.0"
 converterKotlinxSerialization = "3.0.0"
 core = "1.19.0"
 coreKtx = "1.19.0"
