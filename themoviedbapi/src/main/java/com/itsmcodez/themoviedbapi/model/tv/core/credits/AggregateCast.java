@@ -1,0 +1,44 @@
+package com.itsmcodez.themoviedbapi.model.tv.core.credits;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import com.itsmcodez.themoviedbapi.model.core.NamedIdElement;
+import com.itsmcodez.themoviedbapi.model.people.Gender;
+import com.itsmcodez.themoviedbapi.model.tv.series.Role;
+
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class AggregateCast extends NamedIdElement {
+    @JsonProperty("adult")
+    private Boolean adult;
+
+    @JsonProperty("gender")
+    private Gender gender;
+
+    @JsonProperty("known_for_department")
+    private String knownForDepartment;
+
+    @JsonProperty("original_name")
+    private String originalName;
+
+    @JsonProperty("popularity")
+    private Double popularity;
+
+    @JsonProperty("profile_path")
+    private String profilePath;
+
+    @JsonProperty("roles")
+    @JsonDeserialize(using = AggregateCastRolesDeserializer.class)
+    private List<Role> roles = new ArrayList<>();
+
+    @JsonProperty("total_episode_count")
+    private Integer totalEpisodeCount;
+
+    @JsonProperty("order")
+    private Integer order;
+}

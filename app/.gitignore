@@ -1,0 +1,6 @@
+/build
+/google-services.json
+/release
+/release/*.apk
+/release/*.json
+/release/baselineProfiles
