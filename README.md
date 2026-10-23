@@ -1,2 +1,2 @@
 # VuePlay
-Simple and lightweight video player
+A movie streaming client app
