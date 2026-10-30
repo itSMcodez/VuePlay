@@ -34,7 +34,7 @@ ksp = "2.3.4"
 googleGmsGoogleServices = "4.5.0"
 googleFirebaseCrashlytics = "3.0.7"
 media3Session = "1.11.0"
-appcompat = "1.7.1"
+appcompat = "1.8.0"
 material = "1.10.0"
 
 [libraries]
